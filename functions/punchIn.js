@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
 
     await page.goto('https://s2.kingtime.jp/independent/recorder/personal/');
 
-    await page.setViewport({ width: 1968, height: 1146 });
+    await page.setViewport({ width: 1280, height: 900 });
 
     await navigationPromise
 
