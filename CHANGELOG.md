@@ -1,3 +1,7 @@
+## [1.4.1](https://github.com/locona/auto-king/compare/v1.2.2...v1.4.1) (2020-08-30)
+
+
+
 # [1.4.0](https://github.com/locona/auto-king/compare/v1.2.2...v1.4.0) (2020-08-30)
 
 
