@@ -1,1 +1,4 @@
-module.exports = { buildCommand: () => null };
+module.exports = {
+  buildCommand: () => null,
+  publishCommand: () => null,
+};
