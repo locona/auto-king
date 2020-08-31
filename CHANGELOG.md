@@ -1,3 +1,17 @@
+# [1.5.0](https://github.com/locona/auto-king/compare/v1.4.1...v1.5.0) (2020-08-31)
+
+
+### Bug Fixes
+
+* ci ([88a96e0](https://github.com/locona/auto-king/commit/88a96e01fd942ce2f27857b2ae80aa336b41cb3d))
+
+
+### Features
+
+* ci ([4d2272f](https://github.com/locona/auto-king/commit/4d2272f71eec8cf8fe161ef57576569240e1a0df))
+
+
+
 ## [1.4.1](https://github.com/locona/auto-king/compare/v1.2.2...v1.4.1) (2020-08-30)
 
 
