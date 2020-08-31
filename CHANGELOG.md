@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/locona/auto-king/compare/v1.4.2...v1.4.4) (2020-08-31)
+
+
+### Bug Fixes
+
+* cherry-pick ([58dffe2](https://github.com/locona/auto-king/commit/58dffe2eb534b97e5bc79fec5dda9399127c6b1c))
+
+
+
 ## [1.4.3](https://github.com/locona/auto-king/compare/v1.4.2...v1.4.3) (2020-08-31)
 
 
