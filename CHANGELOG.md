@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/locona/auto-king/compare/v1.1.0...v1.2.0) (2020-09-02)
+
+
+### Features
+
+* Add duplicate verification and Randomize the minutes to run ([3a19b3e](https://github.com/locona/auto-king/commit/3a19b3e2ae9f782344977914a53c526c45a8fbcc))
+
+
+
 # 1.1.0 (2020-09-01)
 
 
