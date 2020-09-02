@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const koyomi = require('koyomi');
 const format = require('date-fns/format');
 const ja = require('date-fns/locale/ja');
+const utils = require('./utils')
 
 module.exports = async (req, res) => {
     if (!utils.isRunnableMinute()) {

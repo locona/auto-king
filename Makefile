@@ -1,3 +1,9 @@
+## Checkout latest master branch & git log
+.PHONY: master
+master:
+	-git branch -D master
+	@git fetch && git checkout -b master origin/master
+
 all:
 	make punch-in
 	make punch-out
