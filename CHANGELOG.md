@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/locona/auto-king/compare/v1.2.0...v1.2.1) (2020-09-02)
+
+
+### Bug Fixes
+
+* Bugfix deploy cmd ([96673f7](https://github.com/locona/auto-king/commit/96673f7d17e3390140b99681fba7d1a94321b08f))
+
+
+
 # [1.2.0](https://github.com/locona/auto-king/compare/v1.1.0...v1.2.0) (2020-09-02)
 
 
