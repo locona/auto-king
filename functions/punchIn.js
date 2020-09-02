@@ -2,20 +2,26 @@ const puppeteer = require('puppeteer');
 const koyomi = require('koyomi');
 const format = require('date-fns/format');
 const ja = require('date-fns/locale/ja');
+const utils = require('./utils')
 
 module.exports = async (req, res) => {
-    // const browser = await puppeteer.launch({headless: false});
-    const today = format(
-      new Date(),
-      'yyyy-MM-dd',
-      {locale: ja}
-    );
-    const isOpen = koyomi.isOpen(today);
-    if (!isOpen) {
-      res.send({'message': '休日・祝日です'});
-      return
+    if (!utils.isRunnableMinute()) {
+      res.send({'message': '出勤時間ではありません。'});
+      return;
     }
 
+    if (!utils.isWorkday()) {
+      res.send({'message': '休日・祝日です'});
+      return;
+    }
+
+    const punchable = await utils.isPunchable(utils.mode.start)
+    if (!punchable) {
+      res.send({'message': '既に出勤済みです'});
+      return;
+    }
+
+    // const browser = await puppeteer.launch({headless: false});
     const browser = await puppeteer.launch({
       headless: true,
       args: ['--no-sandbox']
