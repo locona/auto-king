@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/locona/auto-king/compare/v1.2.1...v1.2.2) (2020-09-02)
+
+
+### Bug Fixes
+
+* missing import utils ([081b9e9](https://github.com/locona/auto-king/commit/081b9e9ced3ef86c1200db13e80b1cd602d0b19f))
+
+
+
 ## [1.2.1](https://github.com/locona/auto-king/compare/v1.2.0...v1.2.1) (2020-09-02)
 
 
