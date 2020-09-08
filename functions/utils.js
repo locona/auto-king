@@ -73,6 +73,16 @@ module.exports.isPunchable = async (mode) => {
   const page = await browser.newPage();
   await login(page);
 
+  const schedulePath = `.htBlock-adjastableTableF_inner table tbody tr:nth-child(${day}) [data-ht-sort-index='SCHEDULE']`
+  page.waitForSelector(schedulePath)
+  const scheduleData = await page.$eval(schedulePath, item => {
+    return item.innerText;
+  });
+
+  if (scheduleData.includes('有休')) {
+    return false;
+  }
+
   const day = parseInt(todayDay, 10)
   const startPath = `.htBlock-adjastableTableF_inner table tbody tr:nth-child(${day}) [data-ht-sort-index='${mode}']`
   page.waitForSelector(startPath)

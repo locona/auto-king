@@ -10,6 +10,10 @@ all:
 	make punch-in-schedule
 	make punch-out-schedule
 
+schedule:
+	make punch-in-schedule
+	make punch-out-schedule
+
 punch-in:
 	gcloud functions deploy punchIn --trigger-http --memory 1GB --allow-unauthenticated --runtime nodejs10 --env-vars-file="./.env.yaml"
 
@@ -21,5 +25,3 @@ punch-in-schedule:
 
 punch-out-schedule:
 	gcloud scheduler jobs create http auto-king-miyamae-punch-out --schedule="*/2 20 * * *" --uri="https://us-central1-cdp-dev-206602.cloudfunctions.net/punchOut" --time-zone="Asia/Tokyo"
-
-
