@@ -64,12 +64,14 @@ module.exports.isPunchable = async (mode) => {
     'dd',
     {locale: ja}
   );
+  const day = parseInt(todayDay, 10)
 
-  // const browser = await puppeteer.launch({headless: false});
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox']
-  });
+  const browser = process.env.DEBUG
+    ? await puppeteer.launch({ headless: false })
+    : await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox']
+      });
   const page = await browser.newPage();
   await login(page);
 
@@ -83,7 +85,6 @@ module.exports.isPunchable = async (mode) => {
     return false;
   }
 
-  const day = parseInt(todayDay, 10)
   const startPath = `.htBlock-adjastableTableF_inner table tbody tr:nth-child(${day}) [data-ht-sort-index='${mode}']`
   page.waitForSelector(startPath)
 

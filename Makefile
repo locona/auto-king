@@ -4,6 +4,11 @@ master:
 	-git branch -D master
 	@git fetch && git checkout -b master origin/master
 
+.PHONY: functions
+functions:
+	make punch-in
+	make punch-out
+
 all:
 	make punch-in
 	make punch-out
