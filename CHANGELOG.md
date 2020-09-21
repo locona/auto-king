@@ -1,3 +1,12 @@
+## [1.2.4](https://github.com/locona/auto-king/compare/v1.2.3...v1.2.4) (2020-09-21)
+
+
+### Bug Fixes
+
+* バグ修正 ([484586e](https://github.com/locona/auto-king/commit/484586e0fb4a42822ef9013a411f51b87bd2f441))
+
+
+
 ## [1.2.3](https://github.com/locona/auto-king/compare/v1.2.2...v1.2.3) (2020-09-08)
 
 
