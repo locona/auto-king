@@ -1,3 +1,12 @@
+## [1.2.3](https://github.com/locona/auto-king/compare/v1.2.2...v1.2.3) (2020-09-08)
+
+
+### Bug Fixes
+
+* Support '有休' ([0d0a190](https://github.com/locona/auto-king/commit/0d0a190dea84db7bf527a51893da8a7f3dc6d3ea))
+
+
+
 ## [1.2.2](https://github.com/locona/auto-king/compare/v1.2.1...v1.2.2) (2020-09-02)
 
 
