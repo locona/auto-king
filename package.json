@@ -16,6 +16,6 @@
     "puppeteer": "^5.2.1"
   },
   "devDependencies": {
-    "shipjs": "0.21.0"
+    "shipjs": "0.21.1"
   }
 }
