@@ -13,7 +13,7 @@
     "@google-cloud/functions-framework": "^1.7.1",
     "date-fns": "^2.16.0",
     "koyomi": "^0.5.1",
-    "puppeteer": "^5.2.1"
+    "puppeteer": "^10.0.0"
   },
   "devDependencies": {
     "shipjs": "0.22.0"
