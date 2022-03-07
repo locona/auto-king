@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/functions-framework": "^1.7.1",
+    "@google-cloud/functions-framework": "^3.0.0",
     "date-fns": "^2.16.0",
     "koyomi": "^0.5.1",
     "puppeteer": "^5.2.1"
